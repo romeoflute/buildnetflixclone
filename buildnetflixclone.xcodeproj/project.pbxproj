@@ -13,6 +13,7 @@
 		AD648B82256E9E4E00683EC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD648B81256E9E4E00683EC6 /* Preview Assets.xcassets */; };
 		AD648B8C256EA0AF00683EC6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B8B256EA0AF00683EC6 /* HomeView.swift */; };
 		AD648B91256EA3B100683EC6 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AD648B90256EA3B100683EC6 /* KingfisherSwiftUI */; };
+		AD648B96256EA42500683EC6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B95256EA42500683EC6 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AD648B81256E9E4E00683EC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD648B83256E9E4E00683EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD648B8B256EA0AF00683EC6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD648B95256EA42500683EC6 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 		AD648B79256E9E4B00683EC6 /* buildnetflixclone */ = {
 			isa = PBXGroup;
 			children = (
-				AD648B8A256EA0A100683EC6 /* Home */,
+				AD648B94256EA40700683EC6 /* Views */,
+				AD648B93256EA3FD00683EC6 /* Models */,
 				AD648B7A256E9E4B00683EC6 /* buildnetflixcloneApp.swift */,
 				AD648B7C256E9E4B00683EC6 /* ContentView.swift */,
 				AD648B7E256E9E4E00683EC6 /* Assets.xcassets */,
@@ -80,6 +83,22 @@
 				AD648B8B256EA0AF00683EC6 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		AD648B93256EA3FD00683EC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD648B95256EA42500683EC6 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD648B94256EA40700683EC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD648B8A256EA0A100683EC6 /* Home */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +178,7 @@
 			files = (
 				AD648B8C256EA0AF00683EC6 /* HomeView.swift in Sources */,
 				AD648B7D256E9E4B00683EC6 /* ContentView.swift in Sources */,
+				AD648B96256EA42500683EC6 /* Movie.swift in Sources */,
 				AD648B7B256E9E4B00683EC6 /* buildnetflixcloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
