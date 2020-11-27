@@ -39,9 +39,17 @@ struct TopMoviePreview: View {
                     }
                 }
                 HStack{
-                    Text("My List")
+                    Spacer()
+                    SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                        
+                    }
+                    Spacer()
                     Text("Play button")
-                    Text("Info button")
+                    Spacer()
+                    SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "plus", isOn: true) {
+                        
+                    }
+                    Spacer()
                 }
                 
             }
