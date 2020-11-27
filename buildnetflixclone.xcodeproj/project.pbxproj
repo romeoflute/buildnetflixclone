@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD0928912570E75200354673 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0928902570E75200354673 /* TopMoviePreview.swift */; };
+		AD0928952570F6EB00354673 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0928942570F6EB00354673 /* SmallVerticalButton.swift */; };
 		AD648B7B256E9E4B00683EC6 /* buildnetflixcloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B7A256E9E4B00683EC6 /* buildnetflixcloneApp.swift */; };
 		AD648B7D256E9E4B00683EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B7C256E9E4B00683EC6 /* ContentView.swift */; };
 		AD648B7F256E9E4E00683EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD648B7E256E9E4E00683EC6 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		AD0928902570E75200354673 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+		AD0928942570F6EB00354673 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		AD648B77256E9E4A00683EC6 /* buildnetflixclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buildnetflixclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD648B7A256E9E4B00683EC6 /* buildnetflixcloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildnetflixcloneApp.swift; sourceTree = "<group>"; };
 		AD648B7C256E9E4B00683EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0928932570F6CA00354673 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD0928942570F6EB00354673 /* SmallVerticalButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		AD648B6E256E9E4A00683EC6 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		AD648B94256EA40700683EC6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD0928932570F6CA00354673 /* Components */,
 				AD648B8A256EA0A100683EC6 /* Home */,
 			);
 			path = Views;
@@ -212,6 +223,7 @@
 				AD0928912570E75200354673 /* TopMoviePreview.swift in Sources */,
 				AD648B96256EA42500683EC6 /* Movie.swift in Sources */,
 				AD648B7B256E9E4B00683EC6 /* buildnetflixcloneApp.swift in Sources */,
+				AD0928952570F6EB00354673 /* SmallVerticalButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
