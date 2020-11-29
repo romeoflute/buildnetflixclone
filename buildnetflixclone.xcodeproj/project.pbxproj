@@ -14,6 +14,9 @@
 		AD6011F625728927002F8572 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F525728927002F8572 /* Episode.swift */; };
 		AD6011FA25739722002F8572 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F925739722002F8572 /* CustomTabSwitcher.swift */; };
 		AD6011FD2573E00A002F8572 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011FC2573E00A002F8572 /* MoreLikeThis.swift */; };
+		AD6012002573E90D002F8572 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011FF2573E90D002F8572 /* Trailer.swift */; };
+		AD6012032573E991002F8572 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6012022573E991002F8572 /* SwiftUIVideoView.swift */; };
+		AD6012072573EB0D002F8572 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6012062573EB0D002F8572 /* VideoPreviewImage.swift */; };
 		AD648B7B256E9E4B00683EC6 /* buildnetflixcloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B7A256E9E4B00683EC6 /* buildnetflixcloneApp.swift */; };
 		AD648B7D256E9E4B00683EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B7C256E9E4B00683EC6 /* ContentView.swift */; };
 		AD648B7F256E9E4E00683EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD648B7E256E9E4E00683EC6 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 		AD6011F525728927002F8572 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		AD6011F925739722002F8572 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		AD6011FC2573E00A002F8572 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
+		AD6011FF2573E90D002F8572 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
+		AD6012022573E991002F8572 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
+		AD6012062573EB0D002F8572 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		AD648B77256E9E4A00683EC6 /* buildnetflixclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buildnetflixclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD648B7A256E9E4B00683EC6 /* buildnetflixcloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildnetflixcloneApp.swift; sourceTree = "<group>"; };
 		AD648B7C256E9E4B00683EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +82,15 @@
 				AD6011FC2573E00A002F8572 /* MoreLikeThis.swift */,
 			);
 			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		AD6012052573EAEB002F8572 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AD6012022573E991002F8572 /* SwiftUIVideoView.swift */,
+				AD6012062573EB0D002F8572 /* VideoPreviewImage.swift */,
+			);
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 		AD648B6E256E9E4A00683EC6 = {
@@ -133,6 +148,7 @@
 			children = (
 				AD648B95256EA42500683EC6 /* Movie.swift */,
 				AD6011F525728927002F8572 /* Episode.swift */,
+				AD6011FF2573E90D002F8572 /* Trailer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +156,7 @@
 		AD648B94256EA40700683EC6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD6012052573EAEB002F8572 /* VideoPlayer */,
 				AD0928932570F6CA00354673 /* Components */,
 				AD648B8A256EA0A100683EC6 /* Home */,
 				AD6011F0257277D3002F8572 /* MovieDetails */,
@@ -239,9 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD648B9E256EA53000683EC6 /* GlobalHelpers.swift in Sources */,
+				AD6012002573E90D002F8572 /* Trailer.swift in Sources */,
 				AD6011F625728927002F8572 /* Episode.swift in Sources */,
 				AD648B9A256EA4DB00683EC6 /* StandardHomeView.swift in Sources */,
 				AD648BA3256EA86100683EC6 /* HomeVM.swift in Sources */,
+				AD6012072573EB0D002F8572 /* VideoPreviewImage.swift in Sources */,
 				AD648B8C256EA0AF00683EC6 /* HomeView.swift in Sources */,
 				AD648B7D256E9E4B00683EC6 /* ContentView.swift in Sources */,
 				AD0928912570E75200354673 /* TopMoviePreview.swift in Sources */,
@@ -251,6 +270,7 @@
 				AD6011FA25739722002F8572 /* CustomTabSwitcher.swift in Sources */,
 				AD0928952570F6EB00354673 /* SmallVerticalButton.swift in Sources */,
 				AD092899257106CE00354673 /* PlayButton.swift in Sources */,
+				AD6012032573E991002F8572 /* SwiftUIVideoView.swift in Sources */,
 				AD6011F225727827002F8572 /* MovieDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
