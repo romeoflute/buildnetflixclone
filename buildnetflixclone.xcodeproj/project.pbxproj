@@ -13,6 +13,7 @@
 		AD6011F225727827002F8572 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F125727827002F8572 /* MovieDetailView.swift */; };
 		AD6011F625728927002F8572 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F525728927002F8572 /* Episode.swift */; };
 		AD6011FA25739722002F8572 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F925739722002F8572 /* CustomTabSwitcher.swift */; };
+		AD6011FD2573E00A002F8572 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011FC2573E00A002F8572 /* MoreLikeThis.swift */; };
 		AD648B7B256E9E4B00683EC6 /* buildnetflixcloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B7A256E9E4B00683EC6 /* buildnetflixcloneApp.swift */; };
 		AD648B7D256E9E4B00683EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD648B7C256E9E4B00683EC6 /* ContentView.swift */; };
 		AD648B7F256E9E4E00683EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD648B7E256E9E4E00683EC6 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		AD6011F125727827002F8572 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		AD6011F525728927002F8572 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		AD6011F925739722002F8572 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		AD6011FC2573E00A002F8572 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 		AD648B77256E9E4A00683EC6 /* buildnetflixclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buildnetflixclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD648B7A256E9E4B00683EC6 /* buildnetflixcloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildnetflixcloneApp.swift; sourceTree = "<group>"; };
 		AD648B7C256E9E4B00683EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				AD6011F125727827002F8572 /* MovieDetailView.swift */,
 				AD6011F925739722002F8572 /* CustomTabSwitcher.swift */,
+				AD6011FC2573E00A002F8572 /* MoreLikeThis.swift */,
 			);
 			path = MovieDetails;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				AD0928912570E75200354673 /* TopMoviePreview.swift in Sources */,
 				AD648B96256EA42500683EC6 /* Movie.swift in Sources */,
 				AD648B7B256E9E4B00683EC6 /* buildnetflixcloneApp.swift in Sources */,
+				AD6011FD2573E00A002F8572 /* MoreLikeThis.swift in Sources */,
 				AD6011FA25739722002F8572 /* CustomTabSwitcher.swift in Sources */,
 				AD0928952570F6EB00354673 /* SmallVerticalButton.swift in Sources */,
 				AD092899257106CE00354673 /* PlayButton.swift in Sources */,

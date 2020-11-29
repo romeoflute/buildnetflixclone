@@ -17,7 +17,8 @@ let exampleMovie1 = Movie(
     numberOfSeasons: 1,
     defaultEpisodeInfo: exampleEpisodeInf1,
     creators:"Baran bo Odan, Jantje Friese",
-    cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel"
+    cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7]
 )
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -29,6 +30,7 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInf1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
     promotionHeadline: "Best Rated Show"
 )
 let exampleMovie3 = Movie(
@@ -40,7 +42,9 @@ let exampleMovie3 = Movie(
     numberOfSeasons: 3,
     defaultEpisodeInfo: exampleEpisodeInf1,
     creators:"Baran bo Odan, Jantje Friese",
-    cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel"
+    cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
+    promotionHeadline: "Best Rated Show"
 )
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
@@ -53,6 +57,7 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInf1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
     promotionHeadline: "New Episode Coming Soon"
 )
 let exampleMovie5 = Movie(
@@ -65,7 +70,9 @@ let exampleMovie5 = Movie(
     numberOfSeasons: 5,
     defaultEpisodeInfo: exampleEpisodeInf1,
     creators:"Baran bo Odan, Jantje Friese",
-    cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel"
+    cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
+    promotionHeadline: "Best Rated Show"
 )
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
@@ -77,10 +84,27 @@ let exampleMovie6 = Movie(
     defaultEpisodeInfo: exampleEpisodeInf1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
     promotionHeadline: "Watch Season 6 Now"
 )
 
-let exampleMovies = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "After Life",
+    thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
+    categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+    year: 2020, rating: "TV-MA",
+    numberOfSeasons: 6,
+    defaultEpisodeInfo: exampleEpisodeInf1,
+    creators:"Baran bo Odan, Jantje Friese",
+    cast:"Louis Hoffman, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
+    promotionHeadline: "Watch Season 6 Now"
+)
+
+var exampleMovies: [Movie] {
+    return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+}
 
 let exampleEpisodeInf1 = CurrentEpisodeInfo(episodeName: "Beginnings and Endings", description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Widen perished in an apocalyptic event.", season: 2, episode: 1)
 
@@ -98,5 +122,11 @@ extension String {
         let fontAttributes = [NSAttributedString.Key.font: font]
         let size = self.size(withAttributes: fontAttributes)
         return size.width
+    }
+}
+
+struct GlobalHelpers_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
