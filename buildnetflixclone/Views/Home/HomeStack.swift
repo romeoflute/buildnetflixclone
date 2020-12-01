@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeStack: View {
     var vm: HomeVM
     var topRowSelection: HomeTopRow
+    var selectedGenre:HomeGenre
     @Binding var movieDetailToShow: Movie?
     var body: some View {
         ForEach(vm.allCategories, id:\.self ){ category in
@@ -22,7 +23,7 @@ struct HomeStack: View {
                 }
                 ScrollView(.horizontal, showsIndicators: false){
                     LazyHStack{
-                        ForEach(vm.getMovies(forCategory: category, andHomeRow: topRowSelection)){movie in
+                        ForEach(vm.getMovies(forCat: category, andHomeRow: topRowSelection, andGenre: selectedGenre)){movie in
                             StandardHomeView(movie: movie)
                                 .frame(width:100, height:200)
                                 .padding(.horizontal, 20)
@@ -43,7 +44,7 @@ struct HomeStack_Previews: PreviewProvider {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             ScrollView() {
-                HomeStack(vm: HomeVM(), topRowSelection: .movies, movieDetailToShow: .constant(nil))
+                HomeStack(vm: HomeVM(), topRowSelection: .movies, selectedGenre: .AllGenres, movieDetailToShow: .constant(nil))
             }
             .foregroundColor(.white)
         }
