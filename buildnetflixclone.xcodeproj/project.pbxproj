@@ -25,6 +25,7 @@
 		AD16830E25788E6200913496 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16830D25788E6200913496 /* TrackableScrollView.swift */; };
 		AD16831125788E9000913496 /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16831025788E9000913496 /* NotificationBar.swift */; };
 		AD16831425788EBA00913496 /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16831325788EBA00913496 /* ComingSoonRow.swift */; };
+		AD16831D2578B75C00913496 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16831C2578B75C00913496 /* DownloadsView.swift */; };
 		AD6011F225727827002F8572 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F125727827002F8572 /* MovieDetailView.swift */; };
 		AD6011F625728927002F8572 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F525728927002F8572 /* Episode.swift */; };
 		AD6011FA25739722002F8572 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6011F925739722002F8572 /* CustomTabSwitcher.swift */; };
@@ -65,6 +66,7 @@
 		AD16830D25788E6200913496 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		AD16831025788E9000913496 /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
 		AD16831325788EBA00913496 /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
+		AD16831C2578B75C00913496 /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 		AD6011F125727827002F8572 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		AD6011F525728927002F8572 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		AD6011F925739722002F8572 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		AD1683162578B42900913496 /* Downloads View */ = {
 			isa = PBXGroup;
 			children = (
+				AD16831C2578B75C00913496 /* DownloadsView.swift */,
 			);
 			path = "Downloads View";
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				AD6012072573EB0D002F8572 /* VideoPreviewImage.swift in Sources */,
 				AD648B8C256EA0AF00683EC6 /* HomeView.swift in Sources */,
 				AD648B7D256E9E4B00683EC6 /* ContentView.swift in Sources */,
+				AD16831D2578B75C00913496 /* DownloadsView.swift in Sources */,
 				AD0928912570E75200354673 /* TopMoviePreview.swift in Sources */,
 				AD648B96256EA42500683EC6 /* Movie.swift in Sources */,
 				AD168304257681A800913496 /* StandardHomeMovie.swift in Sources */,
